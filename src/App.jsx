@@ -15,18 +15,49 @@ const books = [
     } 
 ]
 
-// const names = ['hasib', 'heinz', 'chris']
+const names = ['hasib', 'heinz', 'chris'];
+
 function App() {
   return (
     <>
       <h1>Vite + React</h1>
       <section>
-        {/* {names} */}
-        
+        {
+          names.map((nameOrAnyThing) => {
+            return <h1>{nameOrAnyThing}</h1>;
+          })
+        }
       </section>
     </>
   )
 }
+
+
+
+
+// const names = ['hasib', 'heinz', 'chris'];
+
+// const newNames = names.map((nameOrAnyThing) => {
+//   return nameOrAnyThing;
+// });
+
+// ref:1 
+// const newNames = names.map((nameOrAnyThing) => {
+//   return <h1>{nameOrAnyThing}</h1>;
+// });
+// console.log(newNames); // will show react element in the console
+ 
+// ref: 1
+// function App() {
+//   return (
+//     <>
+//       <h1>Vite + React</h1>
+//       <section>
+//         {newNames}
+//       </section>
+//     </>
+//   )
+// }
 
 const Books = (props) => {
   console.log(props);
